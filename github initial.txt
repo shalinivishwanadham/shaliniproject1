@@ -1,0 +1,96 @@
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode
+$ pwd
+/c/gitcode
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode
+$ cd ..
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c
+$ cd gitcode
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode
+$ git init
+Initialized empty Git repository in C:/gitcode/.git/
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git add .
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git commit -m "to transfer"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'shalini@LAPTOP-4VJBOASQ.(none)')
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git config --global user.email "shalini.vishwa10@gmail.com"
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git config --global user.name "shalinivishwanadham"
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git commit -m "to transfer the data"
+[master (root-commit) 1773bed] to transfer the data
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file1.txt
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git remote add origin "https://github.com/shalinivishwanadham/shaliniproject1.git"
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git remote -v
+origin  https://github.com/shalinivishwanadham/shaliniproject1.git (fetch)
+origin  https://github.com/shalinivishwanadham/shaliniproject1.git (push)
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 86.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/shalinivishwanadham/shaliniproject1/pull/new/master
+remote:
+To https://github.com/shalinivishwanadham/shaliniproject1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+shalini@LAPTOP-4VJBOASQ MINGW64 /c/gitcode (master)
